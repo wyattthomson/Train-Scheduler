@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Train Schedule</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <h1>Train Schedule</h1>
+        </div>
+        <div class="col-lg-12">
+        </div>
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h3 class="panel-title"><strong>Train Schedules</strong></h3>
+            </div>
+            <div class="panel-body">
+                <table class="table table-hover" id='ep-table'>
+                    <thead>
+                        <tr>
+                            <th>Train</th>
+                            <th>Destination</th>
+                            <th>Frequency </th>
+                            <th>Expected Arrival</th>
+                            <th>ETA </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <!-- Add Employee  -->
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h3 class="panel-title"><strong>Administrator Schedule</strong></h3>
+            </div>
+            <div class="panel-body">
+                <form>
+                    <div class="form-group">
+                        <label for="escape-pod-id">Name</label>
+                        <input class="form-control" id="train-id" type="text">
+                    </div>
+                    <div class="form-group">
+                        <label for="destination">Destination</label>
+                        <input class="form-control" id="dest" type="text">
+                    </div>
+                    <div class="form-group">
+                        <label for="start-time"> Transit Time (00:00)</label>
+                        <input class="form-control" id="start-time" type="text">
+                    </div>
+                    <div class="form-group">
+                        <label for="frequency">Frequency </label>
+                        <input class="form-control" id="freq" type="text">
+                    </div>
+                    <button class="btn btn-primary" id="final-train-info" type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="assets/javascript/app.js"></script>
+</body>
+
+</html>
